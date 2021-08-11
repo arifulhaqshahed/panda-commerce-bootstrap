@@ -18,7 +18,7 @@
   <body>
     <!-- header start -->
     <header>
-      <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="fixed-top container navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="" />
@@ -40,13 +40,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoe">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#bag">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                <a class="nav-link" href="#subscribe" tabindex="-1" aria-disabled="true"
                   >Subscribe</a
                 >
               </li>
@@ -214,7 +214,7 @@
       </section>
 
       <!-- shoes section -->
-      <section class="container">
+      <section class="container" id="shoe">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -269,7 +269,7 @@
       </section>
 
       <!-- bags section -->
-      <section class="container my-5">
+      <section class="container my-5" id="bag">
         <h2>Bagpacks</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -323,10 +323,27 @@
           </div>
         </div>
       </section>
+
+      <!-- subscribe -->
+      <section
+        style="height: 300px; background-color: #fceae8"
+        class="container d-flex justify-content-center align-items-center rounded-3"
+        id="subscribe"
+      >
+        <div>
+          <h1>LET'S STAY IN TOUCH</h1>
+          <h6 class="text-muted">Get updates on sales, specials and more</h6>
+          <input type="text" placeholder="Your Email" />
+          <br />
+          <button class="btn btn-danger">SUBMIT</button>
+        </div>
+      </section>
     </main>
 
     <!-- footer start -->
-    <footer></footer>
+    <footer class="mt-5 text-center">
+      <small>©2020. Panda Commerce. All rights reserved.</small>
+    </footer>
 
     <!-- bootstrap script -->
     <script
